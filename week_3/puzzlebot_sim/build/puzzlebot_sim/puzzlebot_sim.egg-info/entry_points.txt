@@ -1,0 +1,6 @@
+[console_scripts]
+controller = puzzlebot_sim.controller:main
+joint_state_publisher = puzzlebot_sim.joint_state_publisher:main
+kinematic_model = puzzlebot_sim.kinematic_model:main
+localisation = puzzlebot_sim.localisation:main
+
