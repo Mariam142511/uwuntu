@@ -1,0 +1,63 @@
+[0.647s] Invoking command in '/home/yestlisanchez/uwuntu/week_3/puzzlebot_sim': PYTHONPATH=/home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/puzzlebot_sim build --build-base /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/build install --record /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/install.log --single-version-externally-managed install_data
+[0.876s] running egg_info
+[0.879s] creating build/puzzlebot_sim/puzzlebot_sim.egg-info
+[0.879s] writing build/puzzlebot_sim/puzzlebot_sim.egg-info/PKG-INFO
+[0.879s] writing dependency_links to build/puzzlebot_sim/puzzlebot_sim.egg-info/dependency_links.txt
+[0.879s] writing entry points to build/puzzlebot_sim/puzzlebot_sim.egg-info/entry_points.txt
+[0.879s] writing requirements to build/puzzlebot_sim/puzzlebot_sim.egg-info/requires.txt
+[0.879s] writing top-level names to build/puzzlebot_sim/puzzlebot_sim.egg-info/top_level.txt
+[0.879s] writing manifest file 'build/puzzlebot_sim/puzzlebot_sim.egg-info/SOURCES.txt'
+[0.881s] reading manifest file 'build/puzzlebot_sim/puzzlebot_sim.egg-info/SOURCES.txt'
+[0.881s] adding license file 'LICENSE'
+[0.881s] writing manifest file 'build/puzzlebot_sim/puzzlebot_sim.egg-info/SOURCES.txt'
+[0.881s] running build
+[0.881s] running build_py
+[0.881s] creating /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/build
+[0.881s] creating /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/build/lib
+[0.881s] creating /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/build/lib/puzzlebot_sim
+[0.882s] copying puzzlebot_sim/__init__.py -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/build/lib/puzzlebot_sim
+[0.882s] copying puzzlebot_sim/kinematic_model.py -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/build/lib/puzzlebot_sim
+[0.882s] copying puzzlebot_sim/localisation.py -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/build/lib/puzzlebot_sim
+[0.882s] copying puzzlebot_sim/controller.py -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/build/lib/puzzlebot_sim
+[0.882s] copying puzzlebot_sim/joint_state_publisher.py -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/build/lib/puzzlebot_sim
+[0.882s] running install
+[0.882s] running install_lib
+[0.882s] creating /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim
+[0.883s] copying /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/build/lib/puzzlebot_sim/__init__.py -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim
+[0.883s] copying /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/build/lib/puzzlebot_sim/kinematic_model.py -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim
+[0.883s] copying /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/build/lib/puzzlebot_sim/localisation.py -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim
+[0.883s] copying /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/build/lib/puzzlebot_sim/controller.py -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim
+[0.883s] copying /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/build/lib/puzzlebot_sim/joint_state_publisher.py -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim
+[0.883s] byte-compiling /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim/__init__.py to __init__.cpython-310.pyc
+[0.883s] byte-compiling /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim/kinematic_model.py to kinematic_model.cpython-310.pyc
+[0.886s] byte-compiling /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim/localisation.py to localisation.cpython-310.pyc
+[0.886s] byte-compiling /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim/controller.py to controller.cpython-310.pyc
+[0.886s] byte-compiling /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim/joint_state_publisher.py to joint_state_publisher.cpython-310.pyc
+[0.886s] running install_data
+[0.887s] creating /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/ament_index
+[0.887s] creating /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/ament_index/resource_index
+[0.887s] creating /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/ament_index/resource_index/packages
+[0.887s] copying resource/puzzlebot_sim -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/ament_index/resource_index/packages
+[0.887s] copying package.xml -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/puzzlebot_sim
+[0.887s] creating /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/puzzlebot_sim/launch
+[0.887s] copying launch/puzzlebot_launch.py -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/puzzlebot_sim/launch
+[0.887s] copying launch/kinematic_launch.py -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/puzzlebot_sim/launch
+[0.887s] copying launch/localisation_launch.py -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/puzzlebot_sim/launch
+[0.887s] creating /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/puzzlebot_sim/config
+[0.888s] creating /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/puzzlebot_sim/rviz
+[0.888s] copying rviz/puzzlebot_rviz.rviz -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/puzzlebot_sim/rviz
+[0.888s] creating /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/puzzlebot_sim/meshes
+[0.888s] copying meshes/Puzzlebot_Caster_Wheel.stl -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/puzzlebot_sim/meshes
+[0.888s] copying meshes/Puzzlebot_Wheel.stl -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/puzzlebot_sim/meshes
+[0.888s] copying meshes/Puzzlebot_Jetson_Lidar_Edition_Base.stl -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/puzzlebot_sim/meshes
+[0.888s] creating /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/puzzlebot_sim/urdf
+[0.888s] copying urdf/puzzlebot.urdf -> /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/share/puzzlebot_sim/urdf
+[0.888s] running install_egg_info
+[0.890s] Copying build/puzzlebot_sim/puzzlebot_sim.egg-info to /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim-0.0.0-py3.10.egg-info
+[0.890s] running install_scripts
+[0.908s] Installing controller script to /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/puzzlebot_sim
+[0.909s] Installing joint_state_publisher script to /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/puzzlebot_sim
+[0.909s] Installing kinematic_model script to /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/puzzlebot_sim
+[0.909s] Installing localisation script to /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/puzzlebot_sim
+[0.909s] writing list of installed files to '/home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/install.log'
+[0.929s] Invoked command in '/home/yestlisanchez/uwuntu/week_3/puzzlebot_sim' returned '0': PYTHONPATH=/home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/puzzlebot_sim build --build-base /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/build install --record /home/yestlisanchez/uwuntu/week_3/puzzlebot_sim/build/puzzlebot_sim/install.log --single-version-externally-managed install_data

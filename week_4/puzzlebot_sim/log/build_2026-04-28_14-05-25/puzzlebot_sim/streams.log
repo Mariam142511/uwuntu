@@ -1,0 +1,28 @@
+[0.438s] Invoking command in '/home/yestlisanchez/uwuntu/week_4/puzzlebot_sim': PYTHONPATH=/home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/build/puzzlebot_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/puzzlebot_sim build --build-base /home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/build/puzzlebot_sim/build install --record /home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/build/puzzlebot_sim/install.log --single-version-externally-managed install_data
+[0.609s] running egg_info
+[0.609s] writing build/puzzlebot_sim/puzzlebot_sim.egg-info/PKG-INFO
+[0.609s] writing dependency_links to build/puzzlebot_sim/puzzlebot_sim.egg-info/dependency_links.txt
+[0.611s] writing entry points to build/puzzlebot_sim/puzzlebot_sim.egg-info/entry_points.txt
+[0.612s] writing requirements to build/puzzlebot_sim/puzzlebot_sim.egg-info/requires.txt
+[0.612s] writing top-level names to build/puzzlebot_sim/puzzlebot_sim.egg-info/top_level.txt
+[0.612s] reading manifest file 'build/puzzlebot_sim/puzzlebot_sim.egg-info/SOURCES.txt'
+[0.612s] adding license file 'LICENSE'
+[0.612s] writing manifest file 'build/puzzlebot_sim/puzzlebot_sim.egg-info/SOURCES.txt'
+[0.612s] running build
+[0.612s] running build_py
+[0.613s] copying puzzlebot_sim/joint_state_publisher.py -> /home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/build/puzzlebot_sim/build/lib/puzzlebot_sim
+[0.613s] running install
+[0.613s] running install_lib
+[0.613s] copying /home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/build/puzzlebot_sim/build/lib/puzzlebot_sim/joint_state_publisher.py -> /home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim
+[0.614s] byte-compiling /home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim/joint_state_publisher.py to joint_state_publisher.cpython-310.pyc
+[0.614s] running install_data
+[0.615s] running install_egg_info
+[0.616s] removing '/home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim-0.0.0-py3.10.egg-info' (and everything under it)
+[0.619s] Copying build/puzzlebot_sim/puzzlebot_sim.egg-info to /home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim-0.0.0-py3.10.egg-info
+[0.619s] running install_scripts
+[0.634s] Installing controller script to /home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/install/puzzlebot_sim/lib/puzzlebot_sim
+[0.634s] Installing joint_state_publisher script to /home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/install/puzzlebot_sim/lib/puzzlebot_sim
+[0.635s] Installing kinematic_model script to /home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/install/puzzlebot_sim/lib/puzzlebot_sim
+[0.635s] Installing localisation script to /home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/install/puzzlebot_sim/lib/puzzlebot_sim
+[0.635s] writing list of installed files to '/home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/build/puzzlebot_sim/install.log'
+[0.653s] Invoked command in '/home/yestlisanchez/uwuntu/week_4/puzzlebot_sim' returned '0': PYTHONPATH=/home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/build/puzzlebot_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/install/puzzlebot_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/puzzlebot_sim build --build-base /home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/build/puzzlebot_sim/build install --record /home/yestlisanchez/uwuntu/week_4/puzzlebot_sim/build/puzzlebot_sim/install.log --single-version-externally-managed install_data
