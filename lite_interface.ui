@@ -1,0 +1,1493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>761</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lite6 Control Panel — UFactory</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="rootLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="topBar">
+      <layout class="QHBoxLayout" name="topBarLayout">
+       <item>
+        <widget class="QLabel" name="lblTitle">
+         <property name="text">
+          <string>LITE6 CONTROL PANEL</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="sp1">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblConnStatus">
+         <property name="text">
+          <string>● DESCONECTADO</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>IP:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="txtIP">
+         <property name="text">
+          <string>192.168.1.185</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnConnect">
+         <property name="text">
+          <string>Conectar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnEmStop">
+         <property name="text">
+          <string>⛔ STOP</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tabManual">
+       <attribute name="title">
+        <string>1 · Manual</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="manualLayout">
+        <item>
+         <widget class="QGroupBox" name="grpJog">
+          <property name="title">
+           <string>Jog — Flechas</string>
+          </property>
+          <layout class="QVBoxLayout" name="jogVL">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Plano XY</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QGridLayout" name="jogGrid">
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="btnYPos">
+               <property name="minimumSize">
+                <size>
+                 <width>64</width>
+                 <height>48</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>▲ Y+</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="btnXNeg">
+               <property name="minimumSize">
+                <size>
+                 <width>64</width>
+                 <height>48</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>◀ X−</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QPushButton" name="btnHome">
+               <property name="minimumSize">
+                <size>
+                 <width>64</width>
+                 <height>48</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>⌂</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QPushButton" name="btnXPos">
+               <property name="minimumSize">
+                <size>
+                 <width>64</width>
+                 <height>48</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>X+ ▶</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="btnYNeg">
+               <property name="minimumSize">
+                <size>
+                 <width>64</width>
+                 <height>48</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>▼ Y−</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Eje Z</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="zHL">
+             <item>
+              <widget class="QPushButton" name="btnZNeg">
+               <property name="minimumSize">
+                <size>
+                 <width>96</width>
+                 <height>48</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>▼ Z−</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnZPos">
+               <property name="minimumSize">
+                <size>
+                 <width>96</width>
+                 <height>48</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>▲ Z+</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="stepHL">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Paso:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="cmbStep">
+               <item>
+                <property name="text">
+                 <string>1 mm</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>5 mm</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>10 mm</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>50 mm</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="velHL">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Vel:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="sldSpeed">
+               <property name="minimum">
+                <number>5</number>
+               </property>
+               <property name="maximum">
+                <number>200</number>
+               </property>
+               <property name="value">
+                <number>50</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lblSpeed">
+               <property name="text">
+                <string>50 mm/s</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="jogSp">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="grpCoords">
+          <property name="title">
+           <string>Mover a Coordenadas</string>
+          </property>
+          <layout class="QVBoxLayout" name="coordsVL">
+           <item>
+            <layout class="QFormLayout" name="coordsForm">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>X (mm):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QDoubleSpinBox" name="spnX">
+               <property name="minimum">
+                <double>-700.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>700.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>300.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Y (mm):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QDoubleSpinBox" name="spnY">
+               <property name="minimum">
+                <double>-700.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>700.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>0.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Z (mm):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QDoubleSpinBox" name="spnZ">
+               <property name="minimum">
+                <double>0.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>700.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>200.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Roll (°):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QDoubleSpinBox" name="spnRoll">
+               <property name="minimum">
+                <double>-180.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>180.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>180.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Pitch (°):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QDoubleSpinBox" name="spnPitch">
+               <property name="minimum">
+                <double>-180.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>180.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>0.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Yaw (°):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QDoubleSpinBox" name="spnYaw">
+               <property name="minimum">
+                <double>-180.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>180.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>0.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="coordsBtns">
+             <item>
+              <widget class="QPushButton" name="btnValidate">
+               <property name="text">
+                <string>🔍 Verificar</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnMoveXYZ">
+               <property name="text">
+                <string>▶ Mover</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QFrame" name="sepM">
+             <property name="frameShape">
+              <enum>QFrame::HLine</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Posición actual:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QGridLayout" name="curPosGrid">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>X:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="lblCurX">
+               <property name="text">
+                <string>—</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Y:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLabel" name="lblCurY">
+               <property name="text">
+                <string>—</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Z:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLabel" name="lblCurZ">
+               <property name="text">
+                <string>—</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>R/P/Y:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3">
+              <widget class="QLabel" name="lblCurRPY">
+               <property name="text">
+                <string>—</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="coordsSp">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="txtManualLog">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="placeholderText">
+              <string>Log de movimiento...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="grpViz">
+          <property name="title">
+           <string>Workspace 3D</string>
+          </property>
+          <layout class="QVBoxLayout" name="vizVL">
+           <item>
+            <widget class="QLabel" name="lbl3DView">
+             <property name="minimumSize">
+              <size>
+               <width>260</width>
+               <height>280</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Vista 3D
+(matplotlib / OpenGL)</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="vizBtns">
+             <item>
+              <widget class="QPushButton" name="btnSafePos">
+               <property name="text">
+                <string>Pos. Segura</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnZero">
+               <property name="text">
+                <string>Ir a (0,0,200)</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabFigura">
+       <attribute name="title">
+        <string>2 · Seleccionar figura</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="figuraLayout">
+        <item>
+         <widget class="QGroupBox" name="grpFigSel">
+          <property name="title">
+           <string>Figura destino</string>
+          </property>
+          <layout class="QVBoxLayout" name="figSelVL">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Selecciona la figura y el robot
+se posicionará sobre ella:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnGoTriangle">
+             <property name="text">
+              <string>▲   TRIÁNGULO</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnGoSquare">
+             <property name="text">
+              <string>■   CUADRADO</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnGoCircle">
+             <property name="text">
+              <string>●   CÍRCULO</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="sepF">
+             <property name="frameShape">
+              <enum>QFrame::HLine</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QFormLayout" name="figParamsForm">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Origen X (mm):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QDoubleSpinBox" name="spnFigX">
+               <property name="minimum">
+                <double>50.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>500.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>250.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Origen Y (mm):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QDoubleSpinBox" name="spnFigY">
+               <property name="minimum">
+                <double>-300.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>300.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>0.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Z contacto (mm):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QDoubleSpinBox" name="spnFigZ">
+               <property name="minimum">
+                <double>0.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>50.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>3.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Z vuelo (mm):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QDoubleSpinBox" name="spnFigZLft">
+               <property name="minimum">
+                <double>5.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>100.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>30.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Velocidad (mm/s):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QSpinBox" name="spnFigSpd">
+               <property name="minimum">
+                <number>5</number>
+               </property>
+               <property name="maximum">
+                <number>150</number>
+               </property>
+               <property name="value">
+                <number>30</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="figSp">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="grpFigCanvas">
+          <property name="title">
+           <string>Vista previa y estado</string>
+          </property>
+          <layout class="QVBoxLayout" name="figCanvasVL">
+           <item>
+            <widget class="QLabel" name="lblFigCanvas">
+             <property name="text">
+              <string>Selecciona una figura</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="figStatusHL">
+             <item>
+              <widget class="QLabel" name="lblFigActive">
+               <property name="text">
+                <string>Figura activa: —</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="figStSp">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QProgressBar" name="pbarFig">
+               <property name="value">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="txtFigLog">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="placeholderText">
+              <string>Log de dibujo...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabVision">
+       <attribute name="title">
+        <string>3 · Cámara</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="visionLayout">
+        <item>
+         <widget class="QGroupBox" name="grpCamFeed">
+          <property name="title">
+           <string>Feed de Cámara (OpenCV)</string>
+          </property>
+          <layout class="QVBoxLayout" name="camFeedVL">
+           <item>
+            <layout class="QHBoxLayout" name="camCtrlHL">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>ID:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spnCamId">
+               <property name="value">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnCamStart">
+               <property name="text">
+                <string>▶ Iniciar</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnCamStop">
+               <property name="text">
+                <string>■ Detener</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="camSp">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="chkContours">
+               <property name="text">
+                <string>Contornos</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="chkLabels">
+               <property name="text">
+                <string>Etiquetas</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="lblCamFeed">
+             <property name="minimumSize">
+              <size>
+               <width>460</width>
+               <height>340</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Sin señal de cámara</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="grpCamDet">
+          <property name="title">
+           <string>Detección y posicionamiento</string>
+          </property>
+          <layout class="QVBoxLayout" name="camDetVL">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Figuras detectadas en escena:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="badgesHL">
+             <item>
+              <widget class="QLabel" name="lblDetTri">
+               <property name="text">
+                <string>▲ Triángulo
+—</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lblDetSq">
+               <property name="text">
+                <string>■ Cuadrado
+—</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lblDetCir">
+               <property name="text">
+                <string>● Círculo
+—</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QFrame" name="sepV1">
+             <property name="frameShape">
+              <enum>QFrame::HLine</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Posicionarse sobre figura detectada:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="goCamHL">
+             <item>
+              <widget class="QPushButton" name="btnCamGoTri">
+               <property name="text">
+                <string>▲ Ir al Triángulo</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnCamGoSq">
+               <property name="text">
+                <string>■ Ir al Cuadrado</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="goCamHL2">
+             <item>
+              <widget class="QPushButton" name="btnCamGoCir">
+               <property name="text">
+                <string>● Ir al Círculo</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnCamGoAll">
+               <property name="text">
+                <string>▶ Secuencia △→□→○</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QFrame" name="sepV2">
+             <property name="frameShape">
+              <enum>QFrame::HLine</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QFormLayout" name="camParamsForm">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Z sobre figura (mm):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QDoubleSpinBox" name="spnCamZAbove">
+               <property name="minimum">
+                <double>20.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>200.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>80.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Velocidad (mm/s):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QSpinBox" name="spnCamSpd">
+               <property name="minimum">
+                <number>10</number>
+               </property>
+               <property name="maximum">
+                <number>200</number>
+               </property>
+               <property name="value">
+                <number>50</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QFrame" name="seqFrame1">
+             <layout class="QHBoxLayout" name="seq1HL">
+              <item>
+               <widget class="QLabel" name="seqLbl1">
+                <property name="text">
+                 <string>1 · Triángulo</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="s1sp">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLabel" name="seqPos1">
+                <property name="text">
+                 <string>—</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="seqFrame2">
+             <layout class="QHBoxLayout" name="seq2HL">
+              <item>
+               <widget class="QLabel" name="seqLbl2">
+                <property name="text">
+                 <string>2 · Cuadrado</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="s2sp">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLabel" name="seqPos2">
+                <property name="text">
+                 <string>—</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="seqFrame3">
+             <layout class="QHBoxLayout" name="seq3HL">
+              <item>
+               <widget class="QLabel" name="seqLbl3">
+                <property name="text">
+                 <string>3 · Círculo</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="s3sp">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLabel" name="seqPos3">
+                <property name="text">
+                 <string>—</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="camPbarHL">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Progreso:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QProgressBar" name="pbarCam">
+               <property name="value">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="detSp">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="txtCamLog">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="placeholderText">
+              <string>Log de visión...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabGcode">
+       <attribute name="title">
+        <string>4 · G-code / NGC</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="gcodeLayout">
+        <item>
+         <widget class="QGroupBox" name="grpGcEditor">
+          <property name="title">
+           <string>Archivo G-code / NGC</string>
+          </property>
+          <layout class="QVBoxLayout" name="gcEditorVL">
+           <item>
+            <layout class="QHBoxLayout" name="gcFileHL">
+             <item>
+              <widget class="QPushButton" name="btnLoadGcode">
+               <property name="text">
+                <string>📂 Cargar .gcode / .ngc</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lblGcFile">
+               <property name="text">
+                <string>sin archivo</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="txtGcode">
+             <property name="placeholderText">
+              <string>G0 X0 Y0 Z10 F3000
+G1 X50 Y0 Z0 F1500
+G1 X50 Y50 Z0
+G1 X0 Y50 Z0
+G1 X0 Y0 Z0
+G0 Z10
+M2</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QFormLayout" name="gcParamsForm">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Escala:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QDoubleSpinBox" name="spnGcScale">
+               <property name="minimum">
+                <double>0.100000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>10.000000000000000</double>
+               </property>
+               <property name="singleStep">
+                <double>0.100000000000000</double>
+               </property>
+               <property name="value">
+                <double>1.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Offset X (mm):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QDoubleSpinBox" name="spnGcOffX">
+               <property name="minimum">
+                <double>-300.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>500.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>200.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="lblOffY">
+               <property name="text">
+                <string>Offset Y (mm):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QDoubleSpinBox" name="spnGcOffY">
+               <property name="minimum">
+                <double>-300.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>300.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>0.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Z contacto (mm):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QDoubleSpinBox" name="spnGcZ">
+               <property name="minimum">
+                <double>0.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>50.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>3.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="gcBtnsHL">
+             <item>
+              <widget class="QPushButton" name="btnGcParse">
+               <property name="text">
+                <string>🔍 Analizar</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnGcRun">
+               <property name="text">
+                <string>▶ Ejecutar</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnGcStop">
+               <property name="text">
+                <string>■ Detener</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QGridLayout" name="gcInfoGrid">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Líneas:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="lblGcLines">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Movimientos:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLabel" name="lblGcMoves">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Dist. total:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLabel" name="lblGcDist">
+               <property name="text">
+                <string>0 mm</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="gcPbarHL">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Progreso:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QProgressBar" name="pbarGc">
+               <property name="value">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lblGcPct">
+               <property name="text">
+                <string>0%</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="txtGcLog">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="placeholderText">
+              <string>Log G-code...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="grpGcCanvas">
+          <property name="title">
+           <string>Vista previa de trayectoria</string>
+          </property>
+          <layout class="QVBoxLayout" name="gcCanvasVL">
+           <item>
+            <widget class="QLabel" name="lblGcCanvas">
+             <property name="minimumSize">
+              <size>
+               <width>380</width>
+               <height>400</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Vista previa G-code
+(presiona Analizar)</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

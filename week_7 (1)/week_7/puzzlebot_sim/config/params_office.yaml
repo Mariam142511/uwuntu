@@ -1,0 +1,86 @@
+# ============================================================
+# config/params_office.yaml
+# ============================================================
+
+localisation_node:
+  ros__parameters:
+    wheel_radius:  0.05
+    wheel_base:    0.19
+    # Ruido de proceso (encoders de ruedas)
+    sigma_v:       0.001
+    sigma_w:       0.01
+    # Ruido de observación ArUco
+    sigma_obs_x:     0.08
+    sigma_obs_y:     0.08
+    sigma_obs_theta: 0.15
+    # Offset físico cámara → centro del robot
+    camera_base_x:     0.1241
+    camera_base_y:     0.0
+    camera_base_theta: 0.0
+    # Pose inicial del robot en el mundo
+    x0:     -2.50
+    y0:     -2.50
+    theta0:  0.00
+    # Topics de encoders
+    wr_topic: /VelocityEncR
+    wl_topic: /VelocityEncL
+    # Topic de marcadores ArUco
+    aruco_topic: /aruco_markers
+    # Escalado de incertidumbre con distancia
+    aruco_distance_gain:       0.5
+    aruco_theta_distance_gain: 0.5
+    # Umbral de Mahalanobis
+    mahal_threshold: 999999.0
+    # Mapa de marcadores ArUco
+    marker_map_json: '[{"id":0,"x":-1.40,"y":-2.60,"theta":3.14159},{"id":1,"x":0.00,"y":-3.60,"theta":3.14159},{"id":2,"x":3.10,"y":-2.10,"theta":2.4},{"id":3,"x":-1.30,"y":1.30,"theta":0.0},{"id":4,"x":-3.90,"y":3.70,"theta":0.0},{"id":5,"x":-1.90,"y":3.10,"theta":3.14159},{"id":6,"x":4.20,"y":3.10,"theta":3.14159}]'
+
+trajectory_generator:
+  ros__parameters:
+    waypoint1_x:      2.50
+    waypoint1_y:     -1.50
+    waypoint1_theta:  3.14159
+    waypoint2_x:     -3.00
+    waypoint2_y:      0.20
+    waypoint2_theta: -1.5708
+    waypoint3_x:     -3.00
+    waypoint3_y:      3.50
+    waypoint3_theta:  3.14159
+    goal_x:           4.50
+    goal_y:           3.50
+    goal_theta:       1.5708
+
+controllerBug2_node:
+  ros__parameters:
+    linear_speed:               0.15
+    angular_speed:              0.45
+    goal_tolerance:             0.25
+    yaw_tolerance:              0.25
+    obstacle_distance:          0.30
+    front_angle:                40.0
+    obstacle_detection_count:   3
+    wall_dist_target:           0.45
+    kp_wall:                    1.5
+    ki_wall:                    0.0
+    kd_wall:                    3.0
+    pid_integral_limit:         0.1
+    pid_deriv_alpha:            0.12
+    angular_smooth_alpha:       0.5
+    pid_output_scale:           0.8
+    wall_follow_tighten:        0.75
+    wall_max_follow_distance:   0.3
+    wall_exit_suppression:      1.0
+    wall_exit_confirm_count:    3
+    wall_exit_distance_epsilon: 0.05
+    wall_side_memory_time:      999.0
+    wall_side_exit_distance_limit: 10.0
+    wall_default_side:          RIGHT
+    goal_reached_confirm_count: 10
+    goal_reached_min_time_sec:  1.0
+    publish_rate:               20.0
+    mline_tolerance:            0.35
+
+aruco_detector_node:
+  ros__parameters:
+    marker_size: 0.18
+    aruco_topic: /aruco_markers
+    dictionary:  DICT_4X4_250
